@@ -24,18 +24,18 @@ print("New file")
 
 # Exercise
 
-import time
-timestamp=time.strftime('%H:%M:%S')
-print('Current Time ::',timestamp)
-Hour=int(time.strftime('%H'))
-Minute=int(time.strftime('%M'))
-Second=int(time.strftime('%S'))
+# import time
+# timestamp=time.strftime('%H:%M:%S')
+# print('Current Time ::',timestamp)
+# Hour=int(time.strftime('%H'))
+# Minute=int(time.strftime('%M'))
+# Second=int(time.strftime('%S'))
 
-if 5<=Hour<12:
-    print('Good Morning')
-elif 12 <= Hour < 17:
-    print('Good Afternoon')
-elif 17 <= Hour < 21:
-    print('Good Evening')
-else:
-    print('Good Night')
+# if 5<=Hour<12:
+#     print('Good Morning')
+# elif 12 <= Hour < 17:
+#     print('Good Afternoon')
+# elif 17 <= Hour < 21:
+#     print('Good Evening')
+# else:
+#     print('Good Night')
