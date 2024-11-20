@@ -57,3 +57,5 @@ match x:
         print(x, 'The number you enter is  four')
     case 5:
         print(x, 'The number you enter is  five')
+    case _:
+        print(x,' The number does not lies between 1 to 5')
