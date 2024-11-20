@@ -74,8 +74,14 @@ for each in range(1,11):
 
 #Range with difference
 
-for even in range(0,101,2):
-    print(even)
+# for even in range(0,101,2):
+#     print(even)
 
-for odd in range(1,100,2):
-    print(odd)
+# for odd in range(1,100,2):
+#     print(odd)
+
+#While Loop
+i=0
+while i<5:
+    print(i)
+    i=i+1
