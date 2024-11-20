@@ -39,3 +39,21 @@ print("New file")
 #     print('Good Evening')
 # else:
 #     print('Good Night')
+
+#Match Case in Python
+
+x=int(input('Enter any number between 1 to 5 :'))
+
+match x:
+    case 0:
+        print(x,' The number you enter is  zero')
+    case 1:
+        print(x, 'The number you enter is  one')
+    case 2:
+        print(x, 'The number you enter is  two')
+    case 3:
+        print(x, 'The number you enter is  three')
+    case 4:
+        print(x, 'The number you enter is  four')
+    case 5:
+        print(x, 'The number you enter is  five')
