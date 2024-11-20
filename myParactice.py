@@ -88,13 +88,23 @@ print("New file")
 
 #Break and Continue
 
-for x in range(1,21):
-    print("5 x ",x ,"=",5*x)
-    if (x==10):
-        break
+# for x in range(1,21):
+#     print("5 x ",x ,"=",5*x)
+#     if (x==10):
+#         break
 
-for y in range(1,21):
-    if (y==10):
-        print("10 is here")
-        continue
-    print("4 x ",y ,"=",4*y)
+# for y in range(1,21):
+#     if (y==10):
+#         print("10 is here")
+#         continue
+#     print("4 x ",y ,"=",4*y)
+
+#Function
+
+#if you want to define function body latter then you write pass in function body
+
+def calculateGemMean(a,b):
+    mean=(a*b)/(a+b)
+    print(mean)
+
+calculateGemMean(50,10)
