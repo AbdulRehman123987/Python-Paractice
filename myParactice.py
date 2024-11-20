@@ -42,20 +42,40 @@ print("New file")
 
 #Match Case in Python
 
-x=int(input('Enter any number between 1 to 5 :'))
+# x=int(input('Enter any number between 1 to 5 :'))
 
-match x:
-    case 0:
-        print(x,' The number you enter is  zero')
-    case 1:
-        print(x, 'The number you enter is  one')
-    case 2:
-        print(x, 'The number you enter is  two')
-    case 3:
-        print(x, 'The number you enter is  three')
-    case 4:
-        print(x, 'The number you enter is  four')
-    case 5:
-        print(x, 'The number you enter is  five')
-    case _:
-        print(x,' The number does not lies between 1 to 5')
+# match x:
+#     case 0:
+#         print(x,' The number you enter is  zero')
+#     case 1:
+#         print(x, 'The number you enter is  one')
+#     case 2:
+#         print(x, 'The number you enter is  two')
+#     case 3:
+#         print(x, 'The number you enter is  three')
+#     case 4:
+#         print(x, 'The number you enter is  four')
+#     case 5:
+#         print(x, 'The number you enter is  five')
+#     case _:
+#         print(x,' The number does not lies between 1 to 5')
+
+#For Loop in python
+
+colors=["Red","Blue","Green","Purple"]
+
+for color in colors:
+    print(color)
+    for i in color:
+        print(i)
+
+for each in range(1,11):
+    print(each)
+
+#Range with difference
+
+for even in range(0,101,2):
+    print(even)
+
+for odd in range(1,100,2):
+    print(odd)
