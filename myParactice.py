@@ -62,15 +62,15 @@ print("New file")
 
 #For Loop in python
 
-colors=["Red","Blue","Green","Purple"]
+# colors=["Red","Blue","Green","Purple"]
 
-for color in colors:
-    print(color)
-    for i in color:
-        print(i)
+# for color in colors:
+#     print(color)
+#     for i in color:
+#         print(i)
 
-for each in range(1,11):
-    print(each)
+# for each in range(1,11):
+#     print(each)
 
 #Range with difference
 
@@ -81,7 +81,20 @@ for each in range(1,11):
 #     print(odd)
 
 #While Loop
-i=0
-while i<5:
-    print(i)
-    i=i+1
+# i=0
+# while i<5:
+#     print(i)
+#     i=i+1
+
+#Break and Continue
+
+for x in range(1,21):
+    print("5 x ",x ,"=",5*x)
+    if (x==10):
+        break
+
+for y in range(1,21):
+    if (y==10):
+        print("10 is here")
+        continue
+    print("4 x ",y ,"=",4*y)
