@@ -113,18 +113,38 @@ print("New file")
 
 #Tuple
 
-def average(*number):
-    print(type(number))
-    sum=0
-    for i in number:
-        sum=sum+i
-    print("Average is ",sum/len(number))
+# def average(*number):
+#     print(type(number))
+#     sum=0
+#     for i in number:
+#         sum=sum+i
+#     print("Average is ",sum/len(number))
 
-average(5,4,3)
+# average(5,4,3)
 
-def name(**name):
-    print(type(name))
-    print("Hello ",name["fname"],name['mname'],name["lname"])
+# def name(**name):
+#     print(type(name))
+#     print("Hello ",name["fname"],name['mname'],name["lname"])
 
-name(fname="Ali",mname="Ahmed",lname="Khan")
+# name(fname="Ali",mname="Ahmed",lname="Khan")
+
+#List in Python
+
+list=[4,9,8,4,3,1,3,2,8]
+print(list)
+print(list[0])
+for i in list:
+    print(i)
+print(len(list))
+#for negavtive index it would be len(list) minus negative index in our case length is 3 and -1 it gives 2 so on -1 we get 8
+print(list[-1])
+
+#in keyword with if condition , same thing apply for string also
+
+if 19 in list:
+    print("Yes")
+else:
+    print("No")
+
+print(list[1:9:2])
 
