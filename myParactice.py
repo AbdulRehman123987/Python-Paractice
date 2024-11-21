@@ -150,23 +150,32 @@ print("New file")
 
 #list method
 
-myList=[1,23,1,2,3,2,14]
-print(myList)
-myList.append(7)
-myList.reverse()
-print(myList)
+# myList=[1,23,1,2,3,2,14]
+# print(myList)
+# myList.append(7)
+# myList.reverse()
+# print(myList)
 
-secondlist=myList
-secondlist[0]=100
-print(myList)
+# secondlist=myList
+# secondlist[0]=100
+# print(myList)
 
-#the upper methods change the orignal list recommended to use .copy function
+# #the upper methods change the orignal list recommended to use .copy function
 
-thirdlist=myList.copy()
-thirdlist[0]=90
-thirdlist.insert(3,9000)
-thirdlist.extend(secondlist)
-merge=thirdlist+myList+secondlist
-print(merge)
-print(thirdlist)
+# thirdlist=myList.copy()
+# thirdlist[0]=90
+# thirdlist.insert(3,9000)
+# thirdlist.extend(secondlist)
+# merge=thirdlist+myList+secondlist
+# print(merge)
+# print(thirdlist)
+
+#Tuple
+
+#tuple are not editable or change able
+
+tup=(12,22,221)
+count=tup.count(12)
+print(count)
+print(tup)
 
