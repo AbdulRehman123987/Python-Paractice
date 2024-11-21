@@ -103,8 +103,28 @@ print("New file")
 
 #if you want to define function body latter then you write pass in function body
 
-def calculateGemMean(a,b):
-    mean=(a*b)/(a+b)
-    print(mean)
+# def calculateGemMean(a,b):
+#     mean=(a*b)/(a+b)
+#     print(mean)
 
-calculateGemMean(50,10)
+# calculateGemMean(50,10)
+
+#Dictionary and tuple type in function argument
+
+#Tuple
+
+def average(*number):
+    print(type(number))
+    sum=0
+    for i in number:
+        sum=sum+i
+    print("Average is ",sum/len(number))
+
+average(5,4,3)
+
+def name(**name):
+    print(type(name))
+    print("Hello ",name["fname"],name['mname'],name["lname"])
+
+name(fname="Ali",mname="Ahmed",lname="Khan")
+
