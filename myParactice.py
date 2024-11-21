@@ -130,21 +130,43 @@ print("New file")
 
 #List in Python
 
-list=[4,9,8,4,3,1,3,2,8]
-print(list)
-print(list[0])
-for i in list:
-    print(i)
-print(len(list))
-#for negavtive index it would be len(list) minus negative index in our case length is 3 and -1 it gives 2 so on -1 we get 8
-print(list[-1])
+# list=[4,9,8,4,3,1,3,2,8]
+# print(list)
+# print(list[0])
+# for i in list:
+#     print(i)
+# print(len(list))
+# #for negavtive index it would be len(list) minus negative index in our case length is 3 and -1 it gives 2 so on -1 we get 8
+# print(list[-1])
 
-#in keyword with if condition , same thing apply for string also
+# #in keyword with if condition , same thing apply for string also
 
-if 19 in list:
-    print("Yes")
-else:
-    print("No")
+# if 19 in list:
+#     print("Yes")
+# else:
+#     print("No")
 
-print(list[1:9:2])
+# print(list[1:9:2])
+
+#list method
+
+myList=[1,23,1,2,3,2,14]
+print(myList)
+myList.append(7)
+myList.reverse()
+print(myList)
+
+secondlist=myList
+secondlist[0]=100
+print(myList)
+
+#the upper methods change the orignal list recommended to use .copy function
+
+thirdlist=myList.copy()
+thirdlist[0]=90
+thirdlist.insert(3,9000)
+thirdlist.extend(secondlist)
+merge=thirdlist+myList+secondlist
+print(merge)
+print(thirdlist)
 
