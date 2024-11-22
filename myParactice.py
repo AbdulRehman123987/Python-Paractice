@@ -174,8 +174,26 @@ print("New file")
 
 #tuple are not editable or change able
 
-tup=(12,22,221)
-count=tup.count(12)
-print(count)
-print(tup)
+# tup=(12,22,221)
+# count=tup.count(12)
+# print(count)
+# print(tup)
 
+#String formating in python
+
+name="Ali"
+country="Pakistan"
+price=2.2220303
+
+print(f"My name is {name} and i am form {country}")
+print(f"My name is {name} and i am form {country}, in my country the price of meet is {price:.2f}")
+
+#doc string method
+
+def square(n):
+    '''Take n and print squares of it'''
+    print(n**2)
+
+square(5)
+
+print(square.__doc__)
