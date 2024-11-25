@@ -200,24 +200,36 @@ print("New file")
 
 #Factorial Recursion
 
-def factorial(n):
-    if(n==0 or n==1):
-        return 1
-    else:
-        return n * factorial(n-1)
+# def factorial(n):
+#     if(n==0 or n==1):
+#         return 1
+#     else:
+#         return n * factorial(n-1)
 
-print(factorial(5))
+# print(factorial(5))
 
 #Fibbonacci sequence
-def fibonacci_recursive(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+# def fibonacci_recursive(n):
+#     if n <= 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
 
-n = 10
-for i in range(n):
-    print(fibonacci_recursive(i), end=" ")
+# n = 10
+# for i in range(n):
+#     print(fibonacci_recursive(i), end=" ")
+
+#set in python and its method
+
+s1={2,1,3,4,32,12,1,2,5}
+s2={12,11,32,14,1,12,51}
+print(s1)
+print(s1.union(s2))
+s1.update(s2)
+print(s1)
+s3=s1.symmetric_difference(s2)
+print(s3)
+
 
