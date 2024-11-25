@@ -209,9 +209,16 @@ def factorial(n):
 print(factorial(5))
 
 #Fibbonacci sequence
+def fibonacci_recursive(n):
+    """Find the nth Fibonacci number recursively."""
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
 
-sum=0
-for fs in range(1,20,1):
-    sum=fs+sum
-    print(sum)
+n = 10
+for i in range(n):
+    print(fibonacci_recursive(i), end=" ")
 
