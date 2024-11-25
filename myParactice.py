@@ -210,7 +210,6 @@ print(factorial(5))
 
 #Fibbonacci sequence
 def fibonacci_recursive(n):
-    """Find the nth Fibonacci number recursively."""
     if n <= 0:
         return 0
     elif n == 1:
