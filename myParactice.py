@@ -181,19 +181,29 @@ print("New file")
 
 #String formating in python
 
-name="Ali"
-country="Pakistan"
-price=2.2220303
+# name="Ali"
+# country="Pakistan"
+# price=2.2220303
 
-print(f"My name is {name} and i am form {country}")
-print(f"My name is {name} and i am form {country}, in my country the price of meet is {price:.2f}")
+# print(f"My name is {name} and i am form {country}")
+# print(f"My name is {name} and i am form {country}, in my country the price of meet is {price:.2f}")
 
 #doc string method
 
-def square(n):
-    '''Take n and print squares of it'''
-    print(n**2)
+# def square(n):
+#     '''Take n and print squares of it'''
+#     print(n**2)
 
-square(5)
+# square(5)
 
-print(square.__doc__)
+# print(square.__doc__)
+
+#Factorial Recursion
+
+def factorial(n):
+    if(n==0 or n==1):
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
