@@ -223,13 +223,25 @@ print("New file")
 
 #set in python and its method
 
-s1={2,1,3,4,32,12,1,2,5}
-s2={12,11,32,14,1,12,51}
-print(s1)
-print(s1.union(s2))
-s1.update(s2)
-print(s1)
-s3=s1.symmetric_difference(s2)
-print(s3)
+# s1={2,1,3,4,32,12,1,2,5}
+# s2={12,11,32,14,1,12,51}
+# print(s1)
+# print(s1.union(s2))
+# s1.update(s2)
+# print(s1)
+# s3=s1.symmetric_difference(s2)
+# print(s3)
 
+#Dictionary
 
+disc={
+    "Ali":"is a good boy",
+    "Jhelum":"Is my Home Town",
+}
+
+print(disc["Ali"])
+
+for key in disc.keys():
+    print(f"The Value of key {key} is {disc[key]}")
+
+#Set unordered disctionary ordered
