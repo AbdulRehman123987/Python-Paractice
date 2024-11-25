@@ -234,14 +234,23 @@ print("New file")
 
 #Dictionary
 
-disc={
-    "Ali":"is a good boy",
-    "Jhelum":"Is my Home Town",
-}
+# disc={
+#     "Ali":"is a good boy",
+#     "Jhelum":"Is my Home Town",
+# }
 
-print(disc["Ali"])
+# print(disc["Ali"])
 
-for key in disc.keys():
-    print(f"The Value of key {key} is {disc[key]}")
+# for key in disc.keys():
+#     print(f"The Value of key {key} is {disc[key]}")
 
 #Set unordered disctionary ordered
+
+#For lopp with else in python
+
+for i in range(5):
+    print(i)
+    if i==3:
+        break
+else:
+    print('Loop break')
