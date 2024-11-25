@@ -207,3 +207,11 @@ def factorial(n):
         return n * factorial(n-1)
 
 print(factorial(5))
+
+#Fibbonacci sequence
+
+sum=0
+for fs in range(1,20,1):
+    sum=fs+sum
+    print(sum)
+
