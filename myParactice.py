@@ -270,12 +270,18 @@ print("New file")
 
 #Finally Keyword
 
-try:
-    l=[1,5,7,8]
-    i=int(input("Enter index : "))
-    print(l[i])
-except:
-    print("Some Error Occur")
-finally:
-    print("I am always executed")
+# try:
+#     l=[1,5,7,8]
+#     i=int(input("Enter index : "))
+#     print(l[i])
+# except:
+#     print("Some Error Occur")
+# finally:
+#     print("I am always executed")
+
+#Custom Error
+num=int(input("Enter and number less than 3 or greater than 12 : "))
+
+if 3<= num <= 12:
+    raise ValueError("Value Should be not in range")
 
