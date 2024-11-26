@@ -280,8 +280,35 @@ print("New file")
 #     print("I am always executed")
 
 #Custom Error
-num=int(input("Enter and number less than 3 or greater than 12 : "))
+# num=int(input("Enter and number less than 3 or greater than 12 : "))
 
-if 3<= num <= 12:
-    raise ValueError("Value Should be not in range")
+# if 3<= num <= 12:
+#     raise ValueError("Value Should be not in range")
 
+#Encryption Exercise
+
+def encryDeycry():
+    msg=input("Enter your message : ")
+
+    def decryption(msg):
+        msg_length=len(msg)
+        if msg_length<=3:
+            reverse_msg=msg[::-1]
+            print(reverse_msg)
+            encryDeycry()
+
+        elif 3< msg_length <=7:
+            format_msg=msg[1:-1]
+            reverse_msg=format_msg[::-1]
+            print(reverse_msg)
+            encryDeycry()
+
+        elif 8<= msg_length <=20:
+            format_msg=msg[3:-3]
+            reverse_msg=format_msg[::-1]
+            print(reverse_msg)
+            encryDeycry()
+
+    decryption(msg)
+
+encryDeycry()
