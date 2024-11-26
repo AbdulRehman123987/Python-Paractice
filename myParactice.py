@@ -257,13 +257,25 @@ print("New file")
 
 #Error Handling in Python
 
-a=input("Enter number for table : ")
-print(f"Multiplication of table {a} is : ")
+# a=input("Enter number for table : ")
+# print(f"Multiplication of table {a} is : ")
+
+# try:
+#     for i in range(1,11):
+#         print(f"{int(a)} X {i} = {int(a)*i}")
+# except Exception as e:
+#     print(e)
+    
+# print("Out of program")
+
+#Finally Keyword
 
 try:
-    for i in range(1,11):
-        print(f"{int(a)} X {i} = {int(a)*i}")
-except Exception as e:
-    print(e)
-    
-print("Out of program")
+    l=[1,5,7,8]
+    i=int(input("Enter index : "))
+    print(l[i])
+except:
+    print("Some Error Occur")
+finally:
+    print("I am always executed")
+
