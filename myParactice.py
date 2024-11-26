@@ -248,9 +248,22 @@ print("New file")
 
 #For lopp with else in python
 
-for i in range(5):
-    print(i)
-    if i==3:
-        break
-else:
-    print('Loop break')
+# for i in range(5):
+#     print(i)
+#     if i==3:
+#         break
+# else:
+#     print('Loop break')
+
+#Error Handling in Python
+
+a=input("Enter number for table : ")
+print(f"Multiplication of table {a} is : ")
+
+try:
+    for i in range(1,11):
+        print(f"{int(a)} X {i} = {int(a)*i}")
+except Exception as e:
+    print(e)
+    
+print("Out of program")
