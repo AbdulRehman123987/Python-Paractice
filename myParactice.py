@@ -287,28 +287,37 @@ print("New file")
 
 #Encryption Exercise
 
-def encryDeycry():
-    msg=input("Enter your message : ")
+# def encryDeycry():
+#     msg=input("Enter your message : ")
 
-    def decryption(msg):
-        msg_length=len(msg)
-        if msg_length<=3:
-            reverse_msg=msg[::-1]
-            print(reverse_msg)
-            encryDeycry()
+#     def decryption(msg):
+#         msg_length=len(msg)
+#         if msg_length<=3:
+#             reverse_msg=msg[::-1]
+#             print(reverse_msg)
+#             encryDeycry()
 
-        elif 3< msg_length <=7:
-            format_msg=msg[1:-1]
-            reverse_msg=format_msg[::-1]
-            print(reverse_msg)
-            encryDeycry()
+#         elif 3< msg_length <=7:
+#             format_msg=msg[1:-1]
+#             reverse_msg=format_msg[::-1]
+#             print(reverse_msg)
+#             encryDeycry()
 
-        elif 8<= msg_length <=20:
-            format_msg=msg[3:-3]
-            reverse_msg=format_msg[::-1]
-            print(reverse_msg)
-            encryDeycry()
+#         elif 8<= msg_length <=20:
+#             format_msg=msg[3:-3]
+#             reverse_msg=format_msg[::-1]
+#             print(reverse_msg)
+#             encryDeycry()
 
-    decryption(msg)
+#     decryption(msg)
 
-encryDeycry()
+# encryDeycry()
+
+#Short Hand Expression
+
+a=200
+b=30
+
+c=9 if a>b else 2
+
+print(c)
