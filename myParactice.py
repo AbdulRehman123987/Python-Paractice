@@ -324,7 +324,20 @@ print("New file")
 
 #Enumerate Function in Python to get index also
 
-marks=[12,13,14,11,21,323,232,112,55,343]
+# marks=[12,13,14,11,21,323,232,112,55,343]
 
-for index,mark in enumerate(marks):
-    print(f"At index {index} is {mark}")
+# for index,mark in enumerate(marks):
+#     print(f"At index {index} is {mark}")
+
+#Virtual Environment in Python
+#python -m venv myenv
+#How to Activate this virtual environment
+#myenv/Scripts/activate
+#How to disclose or deactivate virtual environment
+#exit()
+#How to get list of all packages in virtual environment
+#pip freeze
+#pip freeze > requirements.txt
+#How to activate all virtual environment packages in our virtual environment
+#pip freeze -r requirements.txt
+#It activate all packagesin our virtual environment
