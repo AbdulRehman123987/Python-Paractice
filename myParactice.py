@@ -315,9 +315,16 @@ print("New file")
 
 #Short Hand Expression
 
-a=200
-b=30
+# a=200
+# b=30
 
-c=9 if a>b else 2
+# c=9 if a>b else 2
 
-print(c)
+# print(c)
+
+#Enumerate Function in Python to get index also
+
+marks=[12,13,14,11,21,323,232,112,55,343]
+
+for index,mark in enumerate(marks):
+    print(f"At index {index} is {mark}")
