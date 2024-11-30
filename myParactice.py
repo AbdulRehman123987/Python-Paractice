@@ -341,3 +341,28 @@ print("New file")
 #How to activate all virtual environment packages in our virtual environment
 #pip freeze -r requirements.txt
 #It activate all packagesin our virtual environment
+
+# import math
+# floatnum=math.floor(4.0909)
+# squareroot=math.floor(math.sqrt(81))
+# print(squareroot)
+# print(floatnum)
+# # print(dir(math))
+
+# # from paractice import welcome, otherfile
+# import paractice
+
+# print(paractice.welcome())
+# print(paractice.otherfile)
+
+
+# import os
+
+# if(not os.path.exists("PythonData")):
+#     os.mkdir("PythonData")
+# for i in range (1,100):
+#     os.mkdir(f"PythonData/Day{i}")
+#list
+#folders=os.listdir("PythonData")
+# for i in range (1,100):
+#     os.rename(f"PythonData/Day{i}",f"Tutorial {i}")
