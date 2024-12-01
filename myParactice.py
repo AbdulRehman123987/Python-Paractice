@@ -372,3 +372,19 @@ print("New file")
 # print(text)
 # file.close()
 
+#File Module With more functionality
+
+myfile = open('myfile.txt', 'r')
+content = myfile.read() 
+print(content)                  
+myfile.close()
+
+with open('myfile.txt', 'r') as myfile:
+    for line in myfile:
+        print(line.strip())
+
+with open('myfile.txt','r') as f:
+    print(type(f))
+    f.seek(2) #Skip first 2
+    data=f.read(5) #read net 5
+    print(data)
