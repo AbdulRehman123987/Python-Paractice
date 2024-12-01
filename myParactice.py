@@ -366,3 +366,7 @@ print("New file")
 #folders=os.listdir("PythonData")
 # for i in range (1,100):
 #     os.rename(f"PythonData/Day{i}",f"Tutorial {i}")
+file=open('myfile.txt','w')
+text=file.write("Yes yo do it")
+print(text)
+file.close()
