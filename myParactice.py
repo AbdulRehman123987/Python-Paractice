@@ -333,8 +333,9 @@ print("New file")
 #python -m venv myenv
 #How to Activate this virtual environment
 #myenv/Scripts/activate
+#.\Activate.ps1
 #How to disclose or deactivate virtual environment
-#exit()
+#exit
 #How to get list of all packages in virtual environment
 #pip freeze
 #pip freeze > requirements.txt
@@ -366,7 +367,8 @@ print("New file")
 #folders=os.listdir("PythonData")
 # for i in range (1,100):
 #     os.rename(f"PythonData/Day{i}",f"Tutorial {i}")
-file=open('myfile.txt','w')
-text=file.write("Yes yo do it")
-print(text)
-file.close()
+# file=open('myfile.txt','w')
+# text=file.write("Yes yo do it")
+# print(text)
+# file.close()
+
