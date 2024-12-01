@@ -391,15 +391,51 @@ print("New file")
 
 # Lamda Function
 
-def double(x):
-    return x*2
+# def double(x):
+#     return x*2
 
-double=lambda x:x*2
+# double=lambda x:x*2
 
-print(double(50))
+# print(double(50))
 
-def appl(fx,value):
-    return 7+fx(value)
+# def appl(fx,value):
+#     return 7+fx(value)
 
-print(appl(double,5))
-print(appl(lambda x:x*2,5))
+# print(appl(double,5))
+# print(appl(lambda x:x*2,5))
+
+#Map , List , Filter ,Reducer
+
+def cube(x):
+    return x*x*x
+print(cube(2))
+
+l=[1,2,3,4,7,9]
+
+newl=list(map(cube,l))
+
+print(newl)
+
+def filter_function(a):
+    return a>4
+
+newnew1=list(filter(filter_function,l))
+
+print(newnew1)
+
+# value = 1  # Start with 1
+# for day in range(1, 65):  # 1 to 64 days
+#     print(f"Day {day}: {value}")
+#     value *= 2  # Double the value each day
+
+#Reduce function
+
+from functools import reduce
+
+numbers=[1,2,3,4,5]
+
+def mySum(x,y):
+    return x+y
+
+sum=reduce(mySum,numbers)
+print(sum)
