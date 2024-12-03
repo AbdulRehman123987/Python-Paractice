@@ -442,7 +442,20 @@ print("New file")
 
 #Is Vs ==
 
-a=4
-b=4
-print(a is b) #compare location in memory
-print(a == b) #Compare value
+# a=4
+# b=4
+# print(a is b) #compare location in memory
+# print(a == b) #Compare value
+
+#Classes and Object in Memory
+
+class Person:
+    def __init__(self,name,occupation):
+        self.name=name
+        self.occupation=occupation
+
+    def info(self):
+        print(f"{self.name} is a {self.occupation}")
+
+a=Person("Ahmed","HR")
+a.info()
