@@ -449,13 +449,28 @@ print("New file")
 
 #Classes and Object in Memory
 
-class Person:
-    def __init__(self,name,occupation):
-        self.name=name
-        self.occupation=occupation
+# class Person:
+#     def __init__(self,name,occupation):
+#         self.name=name
+#         self.occupation=occupation
 
-    def info(self):
-        print(f"{self.name} is a {self.occupation}")
+#     def info(self):
+#         print(f"{self.name} is a {self.occupation}")
 
-a=Person("Ahmed","HR")
-a.info()
+# a=Person("Ahmed","HR")
+# a.info()
+
+#Decorators
+
+def greet(fx):
+    def mfx(*args,**kwargs):
+        print("Good Morning")
+        fx(*args,**kwargs)
+        print("Thanks for using this function")
+    return mfx
+
+@greet
+def hello():
+    print("Hellow World")
+
+hello()
